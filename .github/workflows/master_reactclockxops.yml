@@ -26,10 +26,18 @@ jobs:
         npm run build --if-present
         npm run test --if-present
 
-    - name: 'Deploy to Azure Web App'
+    - name: 'Deploy to Azure Web App1'
       uses: azure/webapps-deploy@v1
       with:
         app-name: 'reactclockxops'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_3a0f4ff4f64f442fa1e33ffa4134ca64 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_App1 }}
+        package: .
+
+    - name: 'Deploy to Azure Web App2'
+      uses: azure/webapps-deploy@v1
+      with:
+        app-name: 'reactclockxops'
+        slot-name: 'production'
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_App2 }}
         package: .
