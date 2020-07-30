@@ -33,7 +33,7 @@ jobs:
       with:
         app-name: 'reactclockxops'
         slot-name: 'development'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_App1 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_App1_DEV }}
         package: .
 
     - name: 'Deploy to Azure Web App2'
@@ -41,5 +41,5 @@ jobs:
       with:
         app-name: 'reactclockxops'
         slot-name: 'development'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_App2 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_App2_DEV }}
         package: .
