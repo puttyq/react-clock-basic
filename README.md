@@ -205,7 +205,7 @@ I use [SemVer](http://semver.org/) for versioning. For the versions available, s
 
 ## Authors
 
-* **Douglas Minnaar** - *Initial work* - [drminnaar](https://github.com/drminnaar)
+* **Douglas Minnaar** - *Initial work*
 
 [react-starter]: https://github.com/drminnaar/react-starter
 [react-clicker]: https://github.com/drminnaar/react-clicker
